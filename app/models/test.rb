@@ -1,3 +1,5 @@
 class Test < ActiveRecord::Base
-  # Remember to create a migration!
+  create_table :tests do |t|
+    t.string :name
+  end
 end

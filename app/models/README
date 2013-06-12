@@ -1,5 +1,18 @@
-Add your ActiveRecord models here.
+```bcrypt``` methods for ```User``` model:
 
-You can create them by being in the application root directory and running, e.g.,
+```ruby
+def password
+  @password ||= Password.new(password_hash)
+end
 
-rake generate:model NAME=User
+def password=(new_password)
+  @password = Password.create(new_password)
+  self.password_hash = @password
+end
+
+def self.authenticate(params)
+  user = User.find_by_email(params[:email])
+  return user if user && user.password == params[:password]
+  return false if user == nil || user.password != params[:password]
+end 
+```
