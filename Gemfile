@@ -15,6 +15,7 @@ gem 'activerecord'
 gem 'bcrypt-ruby'
 gem 'rake'
 gem 'slim'
+gem 'sass'
 
 gem 'shotgun'
 
