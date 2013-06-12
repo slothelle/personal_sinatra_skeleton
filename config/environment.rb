@@ -17,7 +17,7 @@ require 'logger'
 
 require 'sinatra'
 require "sinatra/reloader" if development?
-require 'bcrypt-ruby'
+require 'bcrypt'
 require 'erb'
 require 'slim'
 
