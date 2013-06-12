@@ -18,3 +18,13 @@ html
     #container
       h1 Hello, world.
       == yield
+
+/! To use Ruby variables with Slim:
+/! = will escape and content won't render (code will run)
+/! == will disable escaping so content renders
+/! You can also use interpolation, which escapes by default
+/! Code with spaces must be wrapped in parenthesis (...)
+
+/! Hashes and arrays can be written directly
+
+/! Call helper methods: '= helper_name do'

@@ -38,12 +38,17 @@ nav {
   padding-right: 0px;
 }
 
-li.nav {
+.nav {
   display: inline;
   margin: 0;
-  padding-right: $nav-spacing;
-  padding-left: $nav-spacing;
-  border-left: 1px solid black;
+  ul {
+    padding: 0px;
+  }
+  li {
+    padding-right: $nav-spacing;
+    padding-left: $nav-spacing;
+    border-left: 1px solid black;
+  }
 }
 
 li.first {
@@ -51,10 +56,4 @@ li.first {
   display: inline;
   margin: 0;
   padding-right: $nav-spacing;
-}
-
-ul.nav {
-  display: inline;
-  margin: 0;
-  padding: 0;
 }
