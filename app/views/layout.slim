@@ -10,11 +10,10 @@ html
     script src="/js/application.js"
 
   body
-    nav
-      ul.nav
-        li.first Thing1
-        li.nav Thing2
-        li.nav Thing3
+    - if logged_in?
+      == slim :_nav_user
+    - else 
+      == slim :_nav_anon
 
     #container
       h1 Hello, world.
