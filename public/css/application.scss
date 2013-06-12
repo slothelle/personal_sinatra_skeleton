@@ -1,11 +1,14 @@
 $serif: 'Bitter', Georgia, serif;
 $sanserif: 'Open Sans', Arial, sans-serif;
+$text-color-main: #444444;
+$text-color-darker: #333333;
+$nav-spacing: 20px;
 
 body {
   font-family: $sanserif;
   font-size: 1em;
   font-weight: 400;
-  color: #444444;
+  color: $text-color-main;
 }
 
 p {
@@ -20,7 +23,7 @@ p {
 
 h1 {
   font-weight: 800;
-  color: #333333;
+  color: $text-color-darker;
   font-size: 3.5em;
 }
 
@@ -32,14 +35,15 @@ nav {
   top: 0px;
   left: 0px;
   margin: 0 auto;
-  padding: 20px 0 20px 20px;
+  padding: $nav-spacing;
+  padding-right: 0px;
 }
 
 li.nav {
   display: inline;
   margin: 0;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: $nav-spacing;
+  padding-left: $nav-spacing;
   border-left: 1px solid black;
 }
 
@@ -47,7 +51,7 @@ li.first {
   border-left: 0;
   display: inline;
   margin: 0;
-  padding-right: 20px;
+  padding-right: $nav-spacing;
 }
 
 ul.nav {
