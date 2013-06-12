@@ -2,18 +2,21 @@ body {
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 1em;
   font-weight: 400;
+  color: #444444;
 }
 
 #container {
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 80px;
   width: 700px;
-  text-align: center;
 }
 
 h1 {
   font-weight: 800;
+  color: #333333;
+  font-size: 3.5em;
 }
+
 
 nav {
   position: fixed;
@@ -22,6 +25,7 @@ nav {
   top: 0px;
   left: 0px;
   margin: 0 auto;
+  padding: 20px 0 20px 20px;
 }
 
 li.nav {
@@ -29,11 +33,14 @@ li.nav {
   margin: 0;
   padding-right: 20px;
   padding-left: 20px;
-  border-left: 20px solid #FF0099;
+  border-left: 1px solid black;
 }
 
 li.first {
   border-left: 0;
+  display: inline;
+  margin: 0;
+  padding-right: 20px;
 }
 
 ul.nav {
