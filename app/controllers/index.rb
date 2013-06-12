@@ -1,5 +1,5 @@
 get '/' do
-  erb :index
+  slim :index
 end
 
 get '/css/:name.css' do
