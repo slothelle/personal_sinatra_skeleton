@@ -5,4 +5,5 @@ Includes:
 - bcrypt
 - Open Sans as base font (from Google Fonts)
 - JavaScript template for AJAX with click event handlers
-- Fixed top nav bar
+- Fixed position top nav bar
+- Sass
