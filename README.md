@@ -7,3 +7,4 @@ Includes:
 - JavaScript template for AJAX with click event handlers
 - Fixed position top nav bar
 - Sass
+- Slim syntax (in favor of erb; erb still available under /views/erb)
