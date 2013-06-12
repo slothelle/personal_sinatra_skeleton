@@ -3,6 +3,7 @@ $sanserif: 'Open Sans', Arial, sans-serif;
 $text-color-main: #444444;
 $text-color-darker: #333333;
 $nav-spacing: 20px;
+$accent-color: #CFCDFF;
 
 body {
   font-family: $sanserif;
@@ -29,7 +30,7 @@ h1 {
 
 nav {
   position: fixed;
-  background: #CCCCCC;
+  background: $accent-color;
   width: 100%;
   top: 0px;
   left: 0px;
