@@ -16,6 +16,12 @@ p {
   font-family: $serif;
 }
 
+a {
+  text-decoration: none;
+  color: $text-color-darker;
+  font-weight: 600;
+}
+
 #container {
   margin: 0 auto;
   padding-top: 80px;
