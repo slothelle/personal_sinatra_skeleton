@@ -3,7 +3,8 @@ $sanserif: 'Open Sans', Arial, sans-serif;
 $text-color-main: #444444;
 $text-color-darker: #333333;
 $nav-spacing: 20px;
-$accent-color: #CFCDFF;
+$accent-color-main: #CFCDFF;
+$accent-color-secondary: #DFE7FF;
 $small-font: 0.7em;
 
 body, html {
@@ -42,7 +43,7 @@ a {
 }
 
 #footer {
-  background: $accent-color;
+  background: $accent-color-secondary;
   padding: $nav-spacing;
   padding-left: 80px;
   font-size: $small-font;
@@ -50,7 +51,7 @@ a {
 
 nav {
   position: fixed;
-  background: $accent-color;
+  background: $accent-color-main;
   width: 100%;
   top: 0px;
   left: 0px;
