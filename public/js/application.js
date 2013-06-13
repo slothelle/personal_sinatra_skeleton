@@ -5,25 +5,8 @@ $(document).ready(function() {
     var goTo = $(this).attr('href');
     event.preventDefault();
       $.get(goTo, function(response) {
-        $('#empty').empty();
-        $('#empty').append(response);
+        $('#body').empty();
+        $('#body').append(response);
       });
   });
 });
-
-// $(document).ready(function() {
-//   $('li').on('click', '.login', function(event) {
-//     event.preventDefault();
-//       $.get('/login', function(response) {
-//         $('#empty').empty();
-//         $('#empty').append(response);
-//       });
-//   });
-//   $('li').on('click', '.signup', function(event) {
-//     event.preventDefault();
-//       $.get('/signup', function(response) {
-//         $('#empty').empty();
-//         $('#empty').append(response);
-//       });
-//   });
-// });

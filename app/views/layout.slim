@@ -16,10 +16,14 @@ html
       == slim :_nav_anon
 
     #container
+      #header
       h1 Hello, world.
-      == yield
+      #body 
+        == yield
+      #push
 
-      #empty
+    #footer
+      p &copy; 2013
 
 /! To use Ruby variables with Slim:
 /! = will escape and content won't render (code will run)

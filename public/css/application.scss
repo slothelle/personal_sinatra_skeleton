@@ -4,6 +4,11 @@ $text-color-main: #444444;
 $text-color-darker: #333333;
 $nav-spacing: 20px;
 $accent-color: #CFCDFF;
+$small-font: 0.7em;
+
+body, html {
+  height: 100%;
+}
 
 body {
   font-family: $sanserif;
@@ -23,15 +28,24 @@ a {
 }
 
 #container {
-  margin: 0 auto;
-  padding-top: 80px;
+  padding-top: 70px;
+  padding-bottom: 20px;
   width: 700px;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -30px;
 }
 
-h1 {
-  font-weight: 800;
-  color: $text-color-darker;
-  font-size: 3.5em;
+#footer, #push {
+  height: 30px;
+}
+
+#footer {
+  background: $accent-color;
+  padding: $nav-spacing;
+  padding-left: 80px;
+  font-size: $small-font;
 }
 
 nav {
@@ -63,4 +77,10 @@ li.first {
   display: inline;
   margin: 0;
   padding-right: $nav-spacing;
+}
+
+h1 {
+  font-weight: 800;
+  color: $text-color-darker;
+  font-size: 3.5em;
 }
