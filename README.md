@@ -23,6 +23,7 @@ Drop this onto your computer and have an app running in less than 5 minutes. Per
 - [Sass](http://sass-lang.com/) for CSS
 - [Slim](http://slim-lang.com/) syntax for (most) viewsx
 - A few erb files in views/erb
+- Pre-wired ```Users``` model and migrations (see **Requirements** below)
 
 * Pre-wired controller to compile Sass to CSS 
  - Sass files should be ```*.scss``` and stored in the ```/public/css``` folder
@@ -52,7 +53,7 @@ Drop this onto your computer and have an app running in less than 5 minutes. Per
 - PostgreSQL
 - You like AJAX
 
-* **Users table**. The ```/login``` and ```/signup``` GET/POST routes and views make some assumptions about your app. Namely, that you have a ```Users``` table and are using Sinatra's built-in sessions feature. The model and migration are both provided for the ```Users``` table.
+* **Users table**. The ```/login``` and ```/signup``` GET/POST routes and views make some assumptions. 
  - Users login with an email and password (as opposed to username and password)
  - ```Users``` includes fields for ```first_name```, ```last_name```, ```email```, and ```password_hash```
  - ```email``` and ```password_hash``` are required
