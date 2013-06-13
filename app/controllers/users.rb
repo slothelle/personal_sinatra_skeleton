@@ -11,6 +11,8 @@ get '/signup' do
   slim :_signup, :layout => false
 end 
 
+# Can these two post methods be combined? Nearly identical.
+
 post '/login' do
   user = User.authenticate(params[:user]) 
   session[:user_id] = user.id if user
