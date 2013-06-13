@@ -18,7 +18,7 @@ Drop this onto your computer and have an app running in less than 5 minutes. Per
 - Password fun with [bcrypt](http://bcrypt-ruby.rubyforge.org/)
 - [Open Sans](http://www.google.com/fonts/specimen/Open+Sans) as base font, [Bitter](http://www.google.com/fonts/specimen/Bitter) as paragraph font
 - JavaScript with AJAX for logging in and signing up users
-- Fixed top nav bar
+- Fixed top nav bar that uses partials and helper methods to display info to logged in/out users
 - [Sticky footer](http://ryanfait.com/sticky-footer/)
 - [Sass](http://sass-lang.com/) for CSS
 - [Slim](http://slim-lang.com/) syntax for (most) viewsx
@@ -29,10 +29,10 @@ Drop this onto your computer and have an app running in less than 5 minutes. Per
  - If you add any new files, include them in the head of ```layout.slim``` 
 
 * Pre-wired controller for ```users``` that includes:
- - login GET/POST
- - signup GET/POST
+ - login GET/POST (view + partial included)
+ - signup GET/POST (view + partial included)
  - logout GET
- - user profile GET
+ - user profile GET (empty view included)
 
 
 ------
