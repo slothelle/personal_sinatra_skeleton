@@ -1,5 +1,5 @@
 get '/login' do
-  slim :_login, :layout => false
+  slim :_login
 end
 
 get '/logout' do
@@ -8,7 +8,7 @@ get '/logout' do
 end 
 
 get '/signup' do
-  slim :_signup, :layout => false
+  slim :_signup
 end 
 
 get '/user/:user_id' do
@@ -19,11 +19,11 @@ end
 # Can these two post methods be combined? Nearly identical.
 post '/login' do
   user = User.authenticate(params[:user]) 
-  session[:user_id] = user.id if user
   if user
     redirect '/user' + user.id.to_s
+    session[:user_id] = user.id if user
   else 
-    redirect '/'
+    slim :authfail
   end
 end
 
