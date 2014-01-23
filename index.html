@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Personal sinatra skeleton by feministy</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>Personal sinatra skeleton</h1>
+          <h2>dbc Sinatra skeleton with some personal tweaks</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/feministy/personal_sinatra_skeleton/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/feministy/personal_sinatra_skeleton/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/feministy/personal_sinatra_skeleton" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h2>
+<a name="dbc-sinatra-skeleton" class="anchor" href="#dbc-sinatra-skeleton"><span class="octicon octicon-link"></span></a>dbc Sinatra skeleton</h2>
+
+<p><em>with some person tweaks!</em></p>
+
+<p>Drop this onto your computer and have an app running in less than 5 minutes. Personal embellishments to the <a href="http://devbootcamp.com">dbc</a> skeleton listed below. I can't take credit for the core environment, database, rake, or gem set up. </p>
+
+<hr><p><strong>TO DO</strong></p>
+
+<ul>
+<li>Error handling</li>
+<li>Refine AJAX to toggle login/signup form</li>
+<li>Cross-browser CSS (currently functioning in Chrome)</li>
+</ul><hr><h4>
+<a name="modifications" class="anchor" href="#modifications"><span class="octicon octicon-link"></span></a>Modifications</h4>
+
+<ul>
+<li>Password fun with <a href="http://bcrypt-ruby.rubyforge.org/">bcrypt</a>
+</li>
+<li>
+<a href="http://www.google.com/fonts/specimen/Open+Sans">Open Sans</a> as base font, <a href="http://www.google.com/fonts/specimen/Bitter">Bitter</a> as paragraph font</li>
+<li>JavaScript with AJAX for logging in and signing up users</li>
+<li>Fixed top nav bar that uses partials and helper methods to display info to logged in/out users</li>
+<li><a href="http://ryanfait.com/sticky-footer/">Sticky footer</a></li>
+<li>
+<a href="http://sass-lang.com/">Sass</a> for CSS</li>
+<li>
+<a href="http://slim-lang.com/">Slim</a> syntax for (most) viewsx</li>
+<li>A few erb files in views/erb</li>
+<li><p>Pre-wired <code>Users</code> model and migrations (see <strong>Requirements</strong> below)</p></li>
+<li>
+<p>Pre-wired controller to compile Sass to CSS </p>
+
+<ul>
+<li>Sass files should be <code>*.scss</code> and stored in the <code>/public/css</code> folder</li>
+<li>If you add any new files, include them in the head of <code>layout.slim</code> </li>
+</ul>
+</li>
+<li>
+<p>Pre-wired controller for <code>users</code> that includes:</p>
+
+<ul>
+<li>login GET/POST (view + partial included)</li>
+<li>signup GET/POST (view + partial included)</li>
+<li>logout GET</li>
+<li>user profile GET (empty view included)</li>
+</ul>
+</li>
+</ul><hr><h4>
+<a name="important-stuff" class="anchor" href="#important-stuff"><span class="octicon octicon-link"></span></a>Important stuff</h4>
+
+<ol>
+<li><code>bundle</code></li>
+<li>Create necessary migrations (<code>rake generate:migration NAME=CreateTableNames</code>) and models (<code>rake generate:model NAME=Name</code>)</li>
+<li><code>rake db:create &amp;&amp; rake db:migrate</code></li>
+<li><code>shotgun</code></li>
+<li>Have a blast</li>
+</ol><hr><h4>
+<a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h4>
+
+<ul>
+<li>PostgreSQL</li>
+<li><p>You like AJAX</p></li>
+<li>
+<p><strong>Users table</strong>. The <code>/login</code> and <code>/signup</code> GET/POST routes and views make some assumptions. </p>
+
+<ul>
+<li>Users login with an email and password (as opposed to username and password)</li>
+<li>
+<code>Users</code> includes fields for <code>first_name</code>, <code>last_name</code>, <code>email</code>, and <code>password_hash</code>
+</li>
+<li>
+<code>email</code> and <code>password_hash</code> are required</li>
+<li>
+<code>email</code> must be unique</li>
+<li>
+<code>password_hash</code> is passed in through <code>params</code> with <code>password</code> processed by bcrypt</li>
+</ul>
+</li>
+</ul>
+        </section>
+
+        <footer>
+          Personal sinatra skeleton is maintained by <a href="https://github.com/feministy">feministy</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
