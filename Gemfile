@@ -1,4 +1,6 @@
-source :rubygems
+source 'https://rubygems.org'
+
+ruby '2.0.0'
 
 # PostgreSQL driver
 gem 'pg'
@@ -12,15 +14,19 @@ gem 'thin'
 
 gem 'activesupport'
 gem 'activerecord'
-gem 'bcrypt-ruby'
 gem 'rake'
 gem 'slim'
 gem 'sass'
 
-group :development do 
+# Only needed for apps with uses
+# because we're smart devs and we encrypt
+# gem 'bcrypt'
+
+group :development do
   gem 'shotgun'
-end 
+end
 
 group :test do
   gem 'faker'
+  gem 'rspec'
 end
